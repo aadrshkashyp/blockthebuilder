@@ -227,17 +227,6 @@ a:hover {
     width: fit-content;
     margin: 0 auto;
   }
-  .dropdown-item {
-    text-align: center;
-  }
-  .dropdown-menu {
-    width: fit-content;
-    margin: 0 auto;
-    transition: 0.2s all ease;
-  }
-  .dropdown-menu.show {
-    transition: 0.2s all ease;
-  }
   ._hero_root_left_wrap {
     text-align: center;
   }
@@ -306,3 +295,5 @@ a:hover {
 /*------------------
     Responsive Ends
 ------------------*/
+
+/* Hero 1 CSS Ends */

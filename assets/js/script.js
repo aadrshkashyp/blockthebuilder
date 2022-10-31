@@ -1,14 +1,14 @@
 $(() => {
   // ----------------------------------     Create Sidebar links     -----------------------------------------
   let blocks = {
-    Hero: 2,
-    Blog: 3,
-    Contact: 2,
-    Feature: 1,
-    Footer: 1,
-    Gallery: 1,
-    Header: 1,
-    pricing: 2,
+    Hero: 1,
+    // Blog: 3,
+    // Contact: 2,
+    // Feature: 1,
+    // Footer: 1,
+    // Gallery: 1,
+    // Header: 1,
+    // pricing: 2,
   };
 
   let navContent = "";
@@ -22,7 +22,7 @@ $(() => {
         !index && num == 1 ? "active" : ""
       }" id="blocks-${block.toLowerCase()}-${num}-link" data-block-type="${block.toLowerCase()}" data-block-num="${num}" data-toggle="pill" role="tab">
 				<li class="block-thumb">
-					<img src="./assets/thumbs/${block.toLowerCase()}_${num}_thumb.svg" alt="thumbnail_image" onerror="this.src='./assets/thumbs/thumb_temp.PNG';">
+					<img src="/assets/thumbs/${block.toLowerCase()}_${num}_thumb.png" alt="thumbnail_image" onerror="this.src='/assets/thumbs/thumb_temp.PNG';">
 				</li>
 			</a>
 			`;
