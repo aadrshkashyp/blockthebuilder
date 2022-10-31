@@ -2,9 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BlockTheBuilder</title>
+
+    <!-- Line Awsome CDN-->
+    <link
+      <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- JQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Highlight Js -->
+    <script defer src="./assets/js/highlight.js"></script>
+    <link rel="stylesheet" href="./assets/css/googlecode.css" />
+
+    <!-- Bootstrap v5 CSS + custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Custom Js -->
+    <script defer src="./assets/js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <ul class="h-100 overflow-auto">
+          <nav
+            class="nav"
+            id="blocks-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <!-- Links created through Js -->
+          </nav>
+        </ul>
+      </nav>
+
+      <!-- Page Content Holder -->
+      <div id="content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-teal p-2">
+          <div class="container-fluid px-0 px-sm-2">
+            <button
+              type="button"
+              id="sidebarCollapse"
+              class="btn_blue navbar-btn ptr-events-none text-white"
+            >
+              <i class="p-2 las la-bars"></i>
+              <span class="d-none d-md-inline-block"> BlackTheBuilder</span>
+            </button>
+            <div
+              id="nav-tools"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <button
+                id="code-preview"
+                class="btn_blue navbar-btn btn-sm rounded-pill ptr-events-none d-none d-md-block text-white"
+              >
+                <i class="fas fa-code"></i>&nbsp;
+                <span>View Code</span>
+              </button>
+
+              <button
+                id="copy-btn"
+                class="btn_blue navbar-btn btn-sm ml-3 ptr-events-none d-none text-white"
+              >
+                <i class="fas fa-copy"></i>&nbsp;
+                <span>Copy source code</span>
+              </button>
+              <div
+                id="device-sel-container"
+                class="justify-content-between align-items-center h-100 ml-3"
+              >
+                <button
+                  data-device="desktop"
+                  class="btn btn-device-sel text-white ptr-events-none text-muted"
+                >
+                  <i class="las la-desktop"></i>
+                </button>
+                <button
+                  data-device="tablet"
+                  class="btn btn-device-sel text-white ptr-events-none text-muted"
+                >
+                  <i class="las la-tablet"></i>
+                </button>
+                <button
+                  data-device="mobile"
+                  class="btn btn-device-sel text-white ptr-events-none text-muted"
+                >
+                  <i class="las la-mobile"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Main Content -->
+        <section class="block-content">
+          <div class="tab-pane fade show active d-flex" id="blocks-container">
+            <img
+              id="tablet-svg"
+              class="device-svg d-none"
+              src="./assets/tablet.svg"
+              alt=""
+            />
+            <img
+              id="mobile-svg"
+              class="device-svg d-none"
+              src="./assets/mobile.svg"
+              alt=""
+            />
+            <iframe
+              id="blocks-iframe"
+              class="mx-auto"
+              src="./blocks/Hero/hero_1.html"
+              title="BootBlox block"
+            ></iframe>
+            <div id="blocks-code" class="">
+              <pre><span class="line-number"></span><code class="html"></code><span class="cl"></span></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
