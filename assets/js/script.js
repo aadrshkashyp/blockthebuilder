@@ -137,6 +137,70 @@ $(() => {
       );
     }, 1000);
   });
+    // ----------------------------------     Theme selector     -----------------------------------------
+
+    let baseColor = "primary",
+        prevColor = "primary",
+        newColor = "primary";
+    let defaultColors = [
+        "primary",
+        "secondary",
+        "success",
+        "danger",
+        "warning",
+        "info",
+    ];
+    let newThemeBtn;
+    $(`.btn-theme-sel.btn-${prevColor}`).addClass("active");
+    $(".btn-theme-sel").on("click", (e) => {
+        newThemeBtn = e.target;
+        $(".btn-theme-sel").not(newThemeBtn).removeClass("active");
+        $(newThemeBtn).addClass("active");
+        newColor = $(newThemeBtn).attr("data-color") || newColor;
+        updateTheme();
+        $("#copy-btn").addClass("d-none");
+        $("#device-sel-container").removeClass("d-none");
+        showHideCode((reset = true));
+    });
+
+    function updateTheme() {
+        $("#blocks-iframe")
+            .contents()
+            .find(
+                `.btn-${prevColor}, .btn-${baseColor}, .btn-outline-${prevColor}, .btn-outline-${baseColor},
+			.bg-${prevColor}, .bg-${baseColor},
+			.text-${prevColor}, .text-${baseColor}`
+            )
+            .each((idx, tag) => {
+                let ele = $(tag);
+                if (
+                    ele.hasClass(`btn-${prevColor}`) ||
+                    ele.hasClass(`btn-${baseColor}`)
+                ) {
+                    ele.removeClass(`btn-${prevColor} btn-${baseColor}`);
+                    ele.addClass(`btn-${newColor}`);
+                } else if (
+                    ele.hasClass(`btn-outline-${prevColor}`) ||
+                    ele.hasClass(`btn-outline-${baseColor}`)
+                ) {
+                    ele.removeClass(
+                        `btn-outline-${prevColor} btn-outline-${baseColor}`
+                    );
+                    ele.addClass(`btn-outline-${newColor}`);
+                } else if (
+                    ele.hasClass(`bg-${prevColor}`) ||
+                    ele.hasClass(`bg-${baseColor}`)
+                ) {
+                    ele.removeClass(`bg-${prevColor} bg-${baseColor}`);
+                    ele.addClass(`bg-${newColor}`);
+                } else {
+                    ele.removeClass(`text-${prevColor} text-${baseColor}`);
+                    ele.addClass(`text-${newColor}`);
+                }
+            });
+        prevColor = newColor;
+    }
+
 
   // ----------------------------------     Device selector     -----------------------------------------
 
