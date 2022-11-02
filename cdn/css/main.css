@@ -71,13 +71,43 @@ a:hover {
   text-decoration: none;
 }
 
-/* Website 1 CSS */
+._toggler {
+  box-shadow: none !important;
+  border: none !important;
+}
 
-/* 
-Hero 1 Start */
+._toggler.collapsed .navbar-toggler-icon {
+  background-image: url(../images/toggler.svg) !important;
+  transition: 0.1s all ease-in-out;
+}
+
+._toggler .navbar-toggler-icon {
+  background-image: url(../images/cross.svg) !important;
+  transition: 0.1s all ease-in-out;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+/*-----------------------
+  Common CSS
+-------------------------*/
+
+/*-----------------------
+  Header starts
+-------------------------*/
 
 ._hero_1_root_wrapper {
   background: var(--bg2);
+}
+
+._logo_wrap {
+  max-width: 100px;
+}
+
+._nav_logo {
+  display: inline-block;
 }
 
 ._hero_1_root_nav {
@@ -109,6 +139,39 @@ Hero 1 Start */
 
 ._hero_1_root_nav_link:hover {
   color: var(--color2) !important;
+}
+
+._active {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #2a3052 !important;
+}
+
+._trial_btn {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #f8faff !important;
+  background: linear-gradient(90deg, #2a50ff 0%, #2a89ff 100%);
+  border-radius: 4px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+}
+
+._login {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color) !important;
 }
 
 ._hero_1_root_wrap {
@@ -193,8 +256,8 @@ Hero 1 Start */
 }
 
 /*--------------
-      Responsive
-  ---------------*/
+  Responsive
+---------------*/
 
 /* Desktop/Laptop */
 
@@ -229,6 +292,17 @@ Hero 1 Start */
   ._hero_1_root_nav_link {
     width: fit-content;
     margin: 0 auto;
+  }
+  .dropdown-item {
+    text-align: center;
+  }
+  .dropdown-menu {
+    width: fit-content;
+    margin: 0 auto;
+    transition: 0.2s all ease;
+  }
+  .dropdown-menu.show {
+    transition: 0.2s all ease;
   }
   ._hero_1_root_left_wrap {
     text-align: center;
@@ -296,9 +370,9 @@ Hero 1 Start */
 /* Mobile */
 
 /*------------------
-      Responsive Ends
-  ------------------*/
-/* 
-  Hero 1 ends */
+  Responsive Ends
+------------------*/
 
-/* Website 1 CSS Ends */
+/*-----------------------
+  Header ends
+-------------------------*/

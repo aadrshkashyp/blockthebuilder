@@ -7,7 +7,7 @@ $(() => {
     // Feature: 1,
     // Footer: 1,
     // Gallery: 1,
-    // Header: 1,
+    Header: 1,
     // pricing: 2,
   };
 
