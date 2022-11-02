@@ -1,0 +1,304 @@
+/*-----------------------
+    Common CSS
+-------------------------*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  color: var(--color2);
+  padding: 0px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+body {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  padding: 0;
+  margin: 0px;
+}
+
+textarea {
+  resize: none !important;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Website 1 CSS */
+
+/* 
+Hero 1 Start */
+
+._hero_1_root_wrapper {
+  background: var(--bg2);
+}
+
+._hero_1_root_nav {
+  margin-left: 20px;
+}
+
+._hero_1_root_nav_right {
+  align-items: center;
+  margin-left: auto;
+}
+
+._hero_1_root_navbar {
+  background: transparent !important;
+  padding: 20px 0 0;
+}
+
+._hero_1_root_nav_item {
+  margin: 0 10px;
+}
+
+._hero_1_root_nav_link {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #2a3052 !important;
+}
+
+._hero_1_root_nav_link:hover {
+  color: var(--color2) !important;
+}
+
+._hero_1_root_wrap {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+._hero_1_root_pattern_wrap {
+  max-width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+._hero_1_root_left_wrap {
+  position: relative;
+  z-index: 10;
+}
+
+._hero_1_root_left_subhead {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #080809;
+}
+
+._hero_1_root_left_head {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #0e1536;
+  margin: 16px 0 20px;
+}
+
+._hero_1_root_left_txt {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color2);
+  margin: 20px 0 40px;
+  max-width: 80%;
+}
+
+._hero_1_root_left_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #f8faff;
+  background: linear-gradient(90deg, #2a50ff 0%, #2a89ff 100%);
+  border-radius: 4px;
+  width: 170px;
+  padding: 20px;
+  transition: 0.2s all ease;
+  margin: 40px 0 0;
+}
+
+._hero_1_root_left_btn:hover {
+  color: var(--bg2);
+  transform: scale(1.1);
+}
+
+._hero_1_root_right_wrap {
+  position: relative;
+  z-index: 10;
+}
+
+._hero_1_root_right_img_wrap {
+  margin-right: -80px;
+  box-shadow: -50px 60px 200px -49px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+/*--------------
+      Responsive
+  ---------------*/
+
+/* Desktop/Laptop */
+
+@media only screen and (max-width: 1500px) {
+  ._hero_1_root_right_img_wrap {
+    margin-right: -30px;
+  }
+}
+
+@media (max-width: 1399px) {
+  ._hero_1_root_right_img_wrap {
+    margin-right: -50px;
+  }
+}
+
+/* Desktop/Laptop */
+
+/* Ipad pro */
+
+@media only screen and (max-width: 1199px) {
+}
+
+/* Ipad pro */
+
+@media only screen and (max-width: 991px) {
+  ._hero_1_root_nav {
+    margin-left: 0;
+  }
+  ._hero_1_root_nav_item {
+    margin: 10px 0;
+  }
+  ._hero_1_root_nav_link {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  ._hero_1_root_left_wrap {
+    text-align: center;
+  }
+  ._hero_1_root_left_txt {
+    margin: 20px auto 40px;
+  }
+  ._hero_1_root_left_btn {
+    margin: 40px auto 0;
+  }
+  ._hero_1_root_right_wrap {
+    margin: 20px 0 0;
+  }
+  ._hero_1_root_right_img_wrap {
+    margin-right: 0;
+  }
+}
+
+/* Ipad pro */
+
+/* Ipad/Mobile L */
+
+@media only screen and (max-width: 767px) {
+  ._hero_1_root_left_txt {
+    max-width: 100%;
+  }
+}
+
+/* Ipad/Mobile L */
+
+/* Mobile */
+
+@media only screen and (max-width: 575px) {
+  ._hero_1_root_left_head {
+    font-size: 46px;
+    margin: 8px 0 10px;
+  }
+  ._hero_1_root_left_txt {
+    margin: 10px auto 20px;
+  }
+  ._hero_1_root_right_img_wrap {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  ._hero_1_root_left_head {
+    font-size: 34px;
+  }
+  ._hero_1_root_wrap {
+    padding: 50px 0 0;
+  }
+  ._hero_1_root_right_img_wrap {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  ._hero_1_root_right_img_wrap {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+
+/*------------------
+      Responsive Ends
+  ------------------*/
+/* 
+  Hero 1 ends */
+
+/* Website 1 CSS Ends */
