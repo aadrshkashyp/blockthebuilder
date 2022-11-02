@@ -77,12 +77,12 @@ a:hover {
 }
 
 ._toggler.collapsed .navbar-toggler-icon {
-  background-image: url(../images/toggler.svg) !important;
+  background-image: url(../../assets/img/toggler.svg) !important;
   transition: 0.1s all ease-in-out;
 }
 
 ._toggler .navbar-toggler-icon {
-  background-image: url(../images/cross.svg) !important;
+  background-image: url(../../assets/img/cross.svg) !important;
   transition: 0.1s all ease-in-out;
 }
 
