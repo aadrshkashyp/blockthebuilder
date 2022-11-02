@@ -1,7 +1,7 @@
 $(() => {
   // ----------------------------------     Create Sidebar links     -----------------------------------------
   let blocks = {
-    Header: 1,
+    Header: 2,
     Hero: 1,
     // Blog: 3,
     // Contact: 2,
