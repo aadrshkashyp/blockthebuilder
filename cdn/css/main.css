@@ -17,7 +17,7 @@ html {
 body {
   margin: 0px auto;
   padding: 0px;
-  background-color: var(--bg);
+  background-color: #fff;
 }
 
 h1,
@@ -99,7 +99,7 @@ a:hover {
 -------------------------*/
 
 ._hero_1_root_wrapper {
-  background: var(--bg2);
+  background: #faf9ff;
 }
 
 ._logo_wrap {
@@ -138,7 +138,7 @@ a:hover {
 }
 
 ._hero_1_root_nav_link:hover {
-  color: var(--color2) !important;
+  color: #65697a !important;
 }
 
 ._active {
@@ -171,7 +171,7 @@ a:hover {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--color) !important;
+  color: #131c43 !important;
 }
 
 ._hero_1_root_wrap {
@@ -216,7 +216,7 @@ a:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  color: var(--color2);
+  color: #65697a;
   margin: 20px 0 40px;
   max-width: 80%;
 }
@@ -240,7 +240,7 @@ a:hover {
 }
 
 ._hero_1_root_left_btn:hover {
-  color: var(--bg2);
+  color: #faf9ff;
   transform: scale(1.1);
 }
 
@@ -388,7 +388,7 @@ a:hover {
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.02em;
-  color: var(--color);
+  color: #131c43;
 }
 
 ._collab_1_root_txt {
@@ -397,7 +397,7 @@ a:hover {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: var(--color2);
+  color: #65697a;
   margin: 12px 0 0;
 }
 
@@ -465,7 +465,7 @@ a:hover {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  color: var(--color2);
+  color: #65697a;
   margin: 15px 0 24px;
 }
 
@@ -572,6 +572,351 @@ a:hover {
 /*-----------------------
   Collaboration ends
 -------------------------*/
+
+/*-----------------------
+    Cta start
+-------------------------*/
+
+._cta_1_root_sec {
+  padding: 80px 0 60px;
+}
+
+._cta_1_root_main_wrap {
+  background: #faf9ff;
+  padding: 60px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+._cta_1_root_head {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: var(--color);
+  max-width: 70%;
+  margin: 0 auto 20px;
+}
+
+._cta_1_root_txt {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #555866;
+  max-width: 70%;
+  margin: 20px auto 40px;
+}
+
+._cta_1_root_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #f8faff;
+  background: linear-gradient(90deg, #2a50ff 0%, #2a89ff 100%);
+  border-radius: 4px;
+  width: 170px;
+  padding: 20px;
+  transition: 0.2s all ease;
+  margin: 40px auto 0;
+}
+
+._cta_1_root_btn:hover {
+  color: var(--bg2);
+  transform: scale(1.1);
+}
+
+/*--------------
+  Responsive
+---------------*/
+
+/* Desktop/Laptop */
+
+@media only screen and (max-width: 1500px) {
+}
+
+@media (max-width: 1399px) {
+}
+
+/* Desktop/Laptop */
+
+/* Ipad pro */
+
+@media only screen and (max-width: 1199px) {
+  ._cta_1_root_head {
+    max-width: 80%;
+  }
+  ._cta_1_root_txt {
+    max-width: 80%;
+  }
+}
+
+/* Ipad pro */
+
+@media only screen and (max-width: 991px) {
+  ._cta_1_root_head {
+    max-width: 100%;
+    font-size: 30px;
+  }
+  ._cta_1_root_txt {
+    max-width: 100%;
+  }
+}
+
+/* Ipad pro */
+
+/* Ipad/Mobile L */
+
+@media only screen and (max-width: 767px) {
+  ._cta_1_root_main_wrap {
+    padding: 50px 40px;
+  }
+  ._cta_1_root_head {
+    font-size: 26px;
+  }
+}
+
+/* Ipad/Mobile L */
+
+/* Mobile */
+
+@media only screen and (max-width: 575px) {
+}
+
+@media only screen and (max-width: 420px) {
+}
+
+@media only screen and (max-width: 375px) {
+  ._cta_1_root_main_wrap {
+    padding: 50px 20px;
+  }
+  ._cta_1_root_head {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+
+/*------------------
+  Responsive Ends
+------------------*/
+
+/*-----------------------
+  Cta ends
+-------------------------*/
+
+/*-----------------------
+    Footer start
+-------------------------*/
+
+._footer_1_root_wrapper {
+  padding: 120px 0 0;
+}
+
+._footer_1_root_left_img_wrap {
+  max-width: 110px;
+}
+
+._footer_1_root_left_txt {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #65697a;
+  margin: 24px 0 20px;
+  max-width: 60%;
+}
+
+._footer_1_root_left_social_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 30%;
+}
+
+._footer_1_root_left_social_link {
+  max-width: 20px;
+}
+
+._footer_1_root_product_wrap {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+._footer_1_root_product_title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #192140;
+}
+
+._footer_1_root_product_list_wrap {
+  list-style: none;
+  margin: 24px 0 0;
+}
+
+._footer_1_root_product_list_item {
+  margin: 13px 0;
+}
+
+._footer_1_root_product_list_link {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #737684;
+}
+
+._footer_1_root_service_title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #192140;
+}
+
+._footer_1_root_service_list_wrap {
+  list-style: none;
+  margin: 24px 0 0;
+}
+
+._footer_1_root_service_list_item {
+  margin: 13px 0;
+}
+
+._footer_1_root_service_list_link {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #737684;
+}
+
+._footer_1_root_solution_title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #192140;
+}
+
+._footer_1_root_solution_list_wrap {
+  list-style: none;
+  margin: 24px 0 0;
+}
+
+._footer_1_root_solution_list_item {
+  margin: 13px 0;
+}
+
+._footer_1_root_solution_list_link {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #737684;
+}
+
+._footer_1_root_solution_copyright {
+  border-top: 1px solid #e5e4eb;
+  padding: 30px 0;
+  margin: 30px 0 0;
+}
+
+._footer_1_root_solution_copyright_txt {
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #989aa7;
+}
+
+/*-----------------------
+  Footer ends
+-------------------------*/
+
+/*--------------
+  Responsive
+---------------*/
+
+/* Desktop/Laptop */
+
+@media only screen and (max-width: 1500px) {
+}
+
+@media (max-width: 1399px) {
+}
+
+/* Desktop/Laptop */
+
+/* Ipad pro */
+
+@media only screen and (max-width: 1199px) {
+  ._footer_1_root_left_txt {
+    max-width: 80%;
+  }
+}
+
+/* Ipad pro */
+
+@media only screen and (max-width: 991px) {
+  ._footer_1_root_product_wrap {
+    width: auto;
+    margin: 20px 0;
+  }
+  ._footer_1_root_service_wrap {
+    margin: 20px 0;
+  }
+  ._footer_1_root_solution_wrap {
+    margin: 20px 0;
+  }
+}
+
+/* Ipad pro */
+
+/* Ipad/Mobile L */
+
+@media only screen and (max-width: 767px) {
+}
+
+/* Ipad/Mobile L */
+
+/* Mobile */
+
+@media only screen and (max-width: 575px) {
+  ._footer_1_root_wrapper {
+    padding: 50px 0 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+/* Mobile */
+
+/*------------------
+  Responsive Ends
+------------------*/
 
 /*-----------------------
   Website 1 ends

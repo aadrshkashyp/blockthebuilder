@@ -10,12 +10,7 @@
       }
     ],
     "highest-available-document-mode": "off",
-    "axe/name-role-value": [
-      "default",
-      {
-        "button-name": "off"
-      }
-    ],
+    "axe/name-role-value": "off",
     "button-type": "off",
     "compat-api/css": [
       "default",
