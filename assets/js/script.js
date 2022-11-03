@@ -2,12 +2,12 @@ $(() => {
   // ----------------------------------     Create Sidebar links     -----------------------------------------
   let blocks = {
     Header: 2,
-    Hero: 1,
+    Hero: 2,
     // Blog: 3,
     // Contact: 2,
     Feature: 1,
     Ctc: 1,
-    Footer: 1,
+    Footer: 2,
     // Gallery: 1,
     // pricing: 2,
   };

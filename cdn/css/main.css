@@ -596,7 +596,7 @@ a:hover {
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.01em;
-  color: var(--color);
+  color: #fff;
   max-width: 70%;
   margin: 0 auto 20px;
 }
@@ -1044,7 +1044,7 @@ Website 2 started
 ._header_2_aihut_lft_t::before {
   position: absolute;
   content: "";
-  background-image: url("../img/header-lft-cnt-ellipse.svg");
+  background-image: url("../../assets/img/hero/hero_2_star.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 46px;
@@ -1256,3 +1256,177 @@ Website 2 started
   }
 }
 /*header aihut section end*/
+
+/*footer aihut section*/
+._footer_2_aihut_wrapper {
+  background: #001f0e;
+  padding: 45px 0;
+}
+._footer_2_aihut_menu_t {
+  font-family: PlusJakartaDisplay;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 20px;
+}
+._footer_2_aihut_menu_li {
+  margin: 0 0 12px;
+  list-style: none;
+}
+._footer_2_aihut_menu_li:last-child {
+  margin: 0;
+}
+._footer_2_aihut_menu_itm {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #808f87;
+  display: inline-block;
+  transition: 0.2s all ease;
+}
+._footer_2_aihut_menu_itm:hover {
+  color: #fff;
+}
+._footer_2_aihut_menu_itm._contact {
+  display: flex;
+  align-items: center;
+}
+._footer_2_aihut_menu_itm_img {
+  max-width: 73px;
+  margin: 0 0 0 8px;
+}
+._footer_2_aihut_menu_itm._lang {
+  display: flex;
+  align-items: center;
+}
+._footer_2_aihut_menu_itm_sp {
+  background-image: url("../../assets/img/footer/footer_2_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 108px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 0 3px;
+}
+._footer_2_aihut_logo_wrap {
+  margin: 80px 0 0;
+}
+._footer_2_aihut_cont {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #808f87;
+}
+._footer_2_aihut_cont_sp {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+}
+._footer_2_aihut_logo_img {
+  max-width: 94px;
+}
+._footer_2_aihut_social_ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+._footer_2_aihut_social_li {
+  margin: 0 0 0 18px;
+}
+._footer_2_aihut_social_li:first-child {
+  margin: 0;
+}
+._footer_2_aihut_social_itm {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease;
+}
+._footer_2_aihut_social_itm:hover {
+  border-color: #fff;
+  background: transparent;
+}
+._footer_2_aihut_social_itm svg {
+  transition: 0.2s all ease;
+}
+._footer_2_aihut_social_itm svg path {
+  transition: 0.2s all ease;
+}
+._footer_2_aihut_social_itm:hover svg path {
+  fill: #fff;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) {
+  ._footer_2_aihut_menu_itm {
+    font-size: 12px;
+  }
+  ._footer_2_aihut_cont_sp {
+    font-size: 15px;
+  }
+  ._footer_2_aihut_cont {
+    font-size: 15px;
+  }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  ._footer_2_aihut_cont {
+    text-align: right;
+  }
+  ._footer_2_space {
+    margin: 40px 0 0;
+  }
+  ._footer_2_aihut_logo_wrap {
+    margin: 60px 0 0;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  ._footer_2_space1 {
+    margin: 40px 0 0;
+  }
+  ._footer_2_aihut_cont {
+    font-size: 13px;
+  }
+  ._footer_2_aihut_social_ul {
+    justify-content: flex-start;
+    margin: 20px 0 0;
+  }
+  ._footer_2_aihut_cont {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+}
+@media only screen and (max-width: 420px) {
+}
+@media only screen and (max-width: 375px) {
+}
+/*footer aihut section end*/
+
+/* 
+Website 2 ended  
+*/
