@@ -5,7 +5,7 @@ $(() => {
     Hero: 2,
     // Blog: 3,
     // Contact: 2,
-    Feature: 1,
+    Feature: 2,
     Ctc: 1,
     Footer: 2,
     // Gallery: 1,
