@@ -1,15 +1,15 @@
 $(() => {
   // ----------------------------------     Create Sidebar links     -----------------------------------------
   let blocks = {
-    Header: 2,
+    Header: 3,
     Hero: 2,
     // Blog: 3,
     // Contact: 2,
     Feature: 2,
     Ctc: 1,
+    Pricing: 1,
     Footer: 2,
     // Gallery: 1,
-    // pricing: 2,
   };
 
   let navContent = "";
