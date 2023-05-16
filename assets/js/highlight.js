@@ -1,8 +1,3 @@
-/*
-  Highlight.js 10.1.1 (93fd0d73)
-  License: BSD-3-Clause
-  Copyright (c) 2006-2020, Ivan Sagalaev
-*/
 var hljs = (function () {
   "use strict";
   function e(n) {
